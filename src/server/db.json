@@ -1,0 +1,76 @@
+{
+  "bikes": [
+    {
+      "id": 1,
+      "name": "DURA ACE DI2 - XOLAR BLACK",
+      "description": "PURE CYCLING MULTIPLIED BY X",
+      "image": "https://pinarello.com/storage/Variant/cff22838c3f40059bf83fc0d70bf22e9.png",
+      "colors": ["#000000"],
+      "price": 62.500
+    },
+    {
+      "id": 2,
+      "name": "DURA ACE DI2 - XOLAR BLUE",
+      "description": "PURE CYCLING MULTIPLIED BY X",
+      "image": "https://pinarello.com/storage/Variant/77ea32549ed762c62acd2dfba899e8cc.png",
+      "price": 72.899
+    },
+    {
+      "id": 3,
+      "name": "DURA ACE DI2 - XOLAR SUN",
+      "description": "PURE CYCLING MULTIPLIED BY X",
+      "image": "https://pinarello.com/storage/Variant/7c802e3ddb3f2598055e72e897060ff3.png",
+      "price": 62.500
+    },
+    {
+      "id": 4,
+      "name": "DURA ACE DI2 - XOLAR GREEN",
+      "description": "PURE CYCLING MULTIPLIED BY X",
+      "image": "https://pinarello.com/storage/Variant/9153cd6df026b80872d58987e19973d0.png",
+      "price": 64.500
+    },
+    {
+      "id": 5,
+      "name": "SRAM RED AXS - XPEED GOLD",
+      "description": "PURE CYCLING MULTIPLIED BY X",
+      "image": "https://pinarello.com/storage/Variant/bee41c10b944a0109ad629cd3762d5a2.png",
+      "price": 74.500
+    },
+    {
+      "id": 6,
+      "name": "SRAM FORCE ETAP AXS - XPEED RED",
+      "description": "PURE CYCLING MULTIPLIED BY X",
+      "image": "https://pinarello.com/storage/Variant/fbbd392f5cb45ad84635c67af77917bf.png",
+      "price": 74.500
+    },
+    {
+      "id": 7,
+      "name": "DURA ACE DI2 - NEBULA GREEN SILVER",
+      "description": "PURE CYCLING MULTIPLIED BY X",
+      "image": "https://pinarello.com/storage/Variant/7ea0be621fc5db07d97172c40dafb7fd.png",
+      "price": 54.200
+    },
+    {
+      "id": 8,
+      "name": "DURA ACE DI2 - SONIC RED",
+      "description": "PURE CYCLING MULTIPLIED BY X",
+      "image": "https://pinarello.com/storage/Variant/b032a2d71c9f75a526be7e5ad1f0558d.png",
+      "price": 25.500
+    },
+    {
+      "id": 9,
+      "name": "SINGLESPEED - WHITE BLUE RED",
+      "description": "PURE CYCLING MULTIPLIED BY X",
+      "image": "https://pinarello.com/storage/Variant/56e1afc26dec6ff074b9b225d748df5e.jpg",
+      "price": 54.900
+    },
+    {
+      "id": 10,
+      "name": "DOGMA F MY 23 - CRYSTAL WHITE",
+      "description": "PURE CYCLING MULTIPLIED BY X",
+      "image": "https://pinarello.com/storage/Variant/9d26bb7411c43d73f03e9a157b3aba3e.png",
+      "price": 54.900
+    }
+
+  ]
+}

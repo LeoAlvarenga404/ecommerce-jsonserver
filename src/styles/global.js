@@ -13,6 +13,13 @@ export default createGlobalStyle`
 
   body {
     font-size: 1.6rem;
+    font-family: 'Arial', sans-serif;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
   }
 
 `
