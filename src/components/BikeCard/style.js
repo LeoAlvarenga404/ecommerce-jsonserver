@@ -7,19 +7,24 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 0.5rem;
   margin-top: 2rem;
+
+  
 }
 `
 
 export const ContainerBikeCard = styled.div`
   display: flex;
-  background-color: #F5F5F5;
+  background-color: ${({theme}) => theme.COLORS.GRAY};
   flex-direction: column;
   padding-block: 3rem;
-  
+  a {
+    color: black;
+  }
   img {
     
     width: 100%;
     max-width: 40rem;
+   
   }
 
   .ball-container {

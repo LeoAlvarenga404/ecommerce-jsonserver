@@ -5,13 +5,13 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
 
-  position: absolute;
+  position: ${props => props.isWhite ? "relative" : "absolute"};
   top: 0;
   width: 100%;
   height: 10rem;
   padding-inline: 2rem;
 
-  background-color:${({theme}) => theme.COLORS.BG_OPACITY};
+  background-color:${props => props.isWhite ? props.theme.COLORS.WHITE : props.theme.COLORS.BG_OPACITY};
 
 `
 
@@ -23,7 +23,7 @@ export const HeaderNav = styled.nav`
     text-transform: uppercase;
    
       a {
-        color: ${({theme}) => theme.COLORS.WHITE};
+        color:${props => props.isWhite ? props.theme.COLORS.BLACK : props.theme.COLORS.WHITE};
       }
   }
 `
@@ -34,6 +34,6 @@ export const ContainerIcons = styled.div`
 
   svg {
     cursor: pointer;
-    color: ${({theme}) => theme.COLORS.WHITE};
+    color:${props => props.isWhite ? props.theme.COLORS.BLACK : props.theme.COLORS.WHITE};
   }
 `

@@ -5,12 +5,14 @@ import { BikeCard } from "../../components/BikeCard";
 import { Header } from "../../components/Header";
 import { BikeCards, ContainerBikeShop } from "./styles";
 
+import { Link } from 'react-router-dom';
+
 export function Home() {
   const [bikes, setBikes] = useState([]);
-
+  const url = 'http://localhost:3000/bikes'
   useEffect(() => {
-    axios.get('http://localhost:3000/bikes')
-      .then(response => setBikes(response.data))
+    axios.get(url)
+      .then(res => setBikes(res.data))
   }, []);
 
   return (
@@ -20,17 +22,17 @@ export function Home() {
       <ContainerBikeShop>
         <h1>ROAD BIKES</h1>
         <BikeCards>
-        {bikes.map(bike => (
-          <BikeCard
-            key={bike.id}
-            name={bike.name}
-            description={bike.description}
-            image={bike.image}
-            colors={bike.colors}
-          />
+          {bikes.map(bike => (
+            <Link key={bike.id} to={`/details/${bike.id}`}>
+              <BikeCard
+                name={bike.name}
+                description={bike.description}
+                image={bike.image}
+                colors={bike.colors}
+              />
+            </Link>
         ))}
-
-        </BikeCards>
+</BikeCards>
       </ContainerBikeShop>
     </div>
   );

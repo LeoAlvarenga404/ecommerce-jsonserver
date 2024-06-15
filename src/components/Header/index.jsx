@@ -2,11 +2,13 @@ import { Logo } from "../../assets/Logo";
 import { ContainerIcons, HeaderContainer, HeaderNav } from "./style";
 import { ShoppingCart, User } from 'phosphor-react'
 
-export function Header() {
+// eslint-disable-next-line react/prop-types
+export function Header({isWhite}) {
+ 
   return (
-    <HeaderContainer>
-      <Logo/>
-      <HeaderNav>
+    <HeaderContainer isWhite={isWhite}>
+      <Logo isWhite={isWhite}/>
+      <HeaderNav isWhite={isWhite}>
         <ul>
           <li><a href="#">Bikes</a></li>
           <li><a href="">Apparel</a></li>
@@ -14,7 +16,7 @@ export function Header() {
           <li><a href="">Support</a></li>
         </ul>
       </HeaderNav>
-      <ContainerIcons>
+      <ContainerIcons isWhite={isWhite}>
         <User size={32}/>
         <ShoppingCart size={32}/>
       </ContainerIcons>
