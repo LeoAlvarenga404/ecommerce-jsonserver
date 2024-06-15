@@ -11,7 +11,7 @@ export const HeaderContainer = styled.header`
   height: 10rem;
   padding-inline: 2rem;
 
-  background-color:${props => props.isWhite ? props.theme.COLORS.WHITE : props.theme.COLORS.BG_OPACITY};
+  background-color:${props => props.isWhite ? props.theme.COLORS.GRAY : props.theme.COLORS.BG_OPACITY};
 
 `
 
