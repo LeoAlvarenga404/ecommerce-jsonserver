@@ -8,18 +8,18 @@ export function Details() {
     const [bikes, setBikes] = useState([])
     const { id } = useParams()
     const [bike, setBike] = useState(null)
-    const url = `http://localhost:3000/bikes/${id}`
+    const url = `http://localhost:3000/bikes`
     
     useEffect(() => {
-        axios.get(url)
+        axios.get(`${url}/${id}`)
             .then(res => setBike(res.data))
 
-    }, [url])
+    }, [url, id])
    
     useEffect(() => {
-        axios.get('http://localhost:3000/bikes')
+        axios.get(url)
             .then(res => setBikes(res.data))
-    }, [])
+    }, [url])
 
     if (!bike) {
         return
@@ -45,7 +45,7 @@ export function Details() {
                 bike02.style.opacity = '0.6'
                 bike03.style.opacity = '0.6'
             }
-            if (imageUrl == bike.images[0]) {
+            else if (imageUrl == bike.images[0]) {
                 bike01.style.borderColor = 'transparent'
                 bike02.style.borderColor = 'black'
                 bike03.style.borderColor = 'transparent'
@@ -53,7 +53,7 @@ export function Details() {
                 bike02.style.opacity = '1'
                 bike03.style.opacity = '0.6'
             }
-            if (imageUrl == bike.images[1]) {
+            else {
                 bike01.style.borderColor = 'transparent'
                 bike02.style.borderColor = 'transparent'
                 bike03.style.borderColor = 'black'

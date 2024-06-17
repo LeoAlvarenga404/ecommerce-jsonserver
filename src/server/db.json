@@ -11,7 +11,8 @@
       "images": [
         "https://pinarello.com/storage/ProductGallery/ed2fbe4ff7aa55ee50d4869ff83e446f.png",
         "https://pinarello.com/storage/ProductGallery/276b2100d710db42e0c4bd5faefe612a.png"
-      ]
+      ],
+      "colors": ["BLACKBLUE", "GREENDARKGREEN", "GREENYELLOWRED", "GRAYDARKGRAY"]
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
       "images": [
         "https://pinarello.com/storage/ProductGallery/b1bd6ab4637379acda99a4002fb1552f.png",
         "https://pinarello.com/storage/ProductGallery/daded40b35467e108f2483919ec4f453.png"
-      ]
+      ],
+      "colors": ["BLACKBLUE", "GREENDARKGREEN", "GREENYELLOWRED", "GRAYDARKGRAY"]
     },
     {
       "id": 3,
@@ -37,7 +39,8 @@
       "images": [
         "https://pinarello.com/storage/ProductGallery/61925dca67d6bdb5220eed6e28c8a257.png",
         "https://pinarello.com/storage/ProductGallery/820997129151bf8696e50e4c4f89f8c8.png"
-      ]
+      ],
+      "colors": ["BLACKBLUE", "GREENDARKGREEN", "GREENYELLOWRED", "GRAYDARKGRAY"]
     },
     {
       "id": 4,
@@ -50,7 +53,8 @@
       "images": [
         "https://pinarello.com/storage/ProductGallery/c9bbe352e3a5cb6181609730f791b187.png",
         "https://pinarello.com/storage/ProductGallery/8cacf99f86f8d02351a7d1c2f2d1cabd.png"
-      ]
+      ],
+      "colors": ["BLACKBLUE", "GREENDARKGREEN", "GREENYELLOWRED", "GRAYDARKGRAY"]
     },
     {
       "id": 5,
@@ -63,7 +67,8 @@
       "images": [
         "https://pinarello.com/storage/ProductGallery/382bd213e23b2ddb2e9221c22790bb33.png",
         "https://pinarello.com/storage/ProductGallery/ee15e60957b9cd78c2c7e0893ccd34c6.png"
-      ]
+      ],
+      "colors": ["GOLDDARKGRAY"]
     },
     {
       "id": 6,
@@ -76,7 +81,8 @@
       "images": [
         "https://pinarello.com/storage/ProductGallery/ff07e97845925bb66c715a9933aa0ce3.png",
         "https://pinarello.com/storage/ProductGallery/8c2b03ccec897d7459cc43367e5b3674.png"
-      ]
+      ],
+      "colors": ["WHITE", "BLACK"]
     },
     {
       "id": 7,
@@ -89,7 +95,8 @@
       "images": [
         "https://pinarello.com/storage/ProductGallery/a299f386ccc8c62407d6442404b9cedf.png",
         "https://pinarello.com/storage/ProductGallery/c678fc0c05d6bda6da6cd402ac74a1cd.png"
-      ]
+      ],
+      "colors": ["WHITE", "BLACK"]
     }
   ]
 }

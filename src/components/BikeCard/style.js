@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   
+
 .card-bike-description {
   display: flex;
   flex-direction: column;
@@ -37,6 +38,8 @@ img {
       }
     }
   }
+
+  
 `
 
 export const ContainerBikeCard = styled.div`
@@ -44,7 +47,7 @@ export const ContainerBikeCard = styled.div`
   background-color: ${({theme}) => theme.COLORS.GRAY};
   flex-direction: column;
   padding-block: 3rem;
-  
+  position: relative;
   a {
     color: black;
   }
@@ -52,20 +55,24 @@ export const ContainerBikeCard = styled.div`
     width: 100%;
     max-width: 40rem;
   }
-  
- 
 
   .ball-container {
     display: flex;
-    gap: 1rem;
-    padding-left: 2rem;
+    flex-direction:row;
+    gap: 2rem;
+    left: 2rem;
+    bottom: 2rem;
+
+    position: absolute;
+    
   }
+
 `
 
 export const ColorBall = styled.div`
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
   border-radius: 50%;
-  background-color: blue;
-
+  background: ${({ theme, color }) => theme.COLORBALL[color] || color};
+  box-shadow: 2px 2px 4px #00000040;
 `
