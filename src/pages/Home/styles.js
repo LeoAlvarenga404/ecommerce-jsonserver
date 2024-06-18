@@ -16,6 +16,9 @@ export const ContainerBikeShop = styled.div`
 export const BikeCards = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  max-width: 1280px;
+
   gap: 2rem;
 
   a {

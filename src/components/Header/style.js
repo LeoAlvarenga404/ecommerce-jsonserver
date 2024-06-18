@@ -4,14 +4,12 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  z-index: 99;
   position: ${props => props.isWhite ? "relative" : "absolute"};
   top: 0;
   width: 100%;
   height: 10rem;
   padding-inline: 2rem;
-
-  background-color:${props => props.isWhite ? props.theme.COLORS.GRAY : props.theme.COLORS.BG_OPACITY};
 
 `
 

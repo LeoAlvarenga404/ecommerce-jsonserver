@@ -8,14 +8,14 @@ export function Header({isWhite}) {
   return (
     <HeaderContainer isWhite={isWhite}>
       <Logo isWhite={isWhite}/>
-      <HeaderNav isWhite={isWhite}>
+      {/* <HeaderNav isWhite={isWhite}>
         <ul>
           <li><a href="#">Bikes</a></li>
           <li><a href="">Apparel</a></li>
           <li><a href="">Acessories</a></li>
           <li><a href="">Support</a></li>
         </ul>
-      </HeaderNav>
+      </HeaderNav> */}
       <ContainerIcons isWhite={isWhite}>
         <User size={32}/>
         <ShoppingCart size={32}/>
