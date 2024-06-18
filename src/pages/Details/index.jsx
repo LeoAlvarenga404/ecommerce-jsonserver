@@ -25,12 +25,21 @@ export function Details() {
         return
     }
 
+    const bike01 = document.getElementById('bike01')
+    const bike02 = document.getElementById('bike02')
+    const bike03 = document.getElementById('bike03')
+
+    function setStyles(borderIndex, opacityIndex) {
+        const bikes = [bike01, bike02, bike03];
+        bikes.forEach((bike, index) => {
+            bike.style.borderColor = index === borderIndex ? 'black' : 'transparent';
+            bike.style.opacity = index === opacityIndex ? '1' : '0.6';
+        });
+    }
+
     const handleSwitchBike = (imageUrl) => {
         const bikeMain = document.getElementById('bikeMain')
-        const bike01 = document.getElementById('bike01')
-        const bike02 = document.getElementById('bike02')
-        const bike03 = document.getElementById('bike03')
-
+    
         bikeMain.style.opacity = 0;
 
         setTimeout(() => {
@@ -38,28 +47,11 @@ export function Details() {
             bikeMain.style.opacity = 1;
 
             if (imageUrl == bike.image) {
-                bike01.style.borderColor = 'black'
-                bike02.style.borderColor = 'transparent'
-                bike03.style.borderColor = 'transparent'
-                bike01.style.opacity = '1'
-                bike02.style.opacity = '0.6'
-                bike03.style.opacity = '0.6'
-            }
-            else if (imageUrl == bike.images[0]) {
-                bike01.style.borderColor = 'transparent'
-                bike02.style.borderColor = 'black'
-                bike03.style.borderColor = 'transparent'
-                bike01.style.opacity = '0.6'
-                bike02.style.opacity = '1'
-                bike03.style.opacity = '0.6'
-            }
-            else {
-                bike01.style.borderColor = 'transparent'
-                bike02.style.borderColor = 'transparent'
-                bike03.style.borderColor = 'black'
-                bike01.style.opacity = '0.6'
-                bike02.style.opacity = '0.6'
-                bike03.style.opacity = '1'
+                setStyles(0, 0);
+            } else if (imageUrl == bike.images[0]) {
+                setStyles(1, 1);
+            } else {
+                setStyles(2, 2);
             }
           }, 300);    
     }

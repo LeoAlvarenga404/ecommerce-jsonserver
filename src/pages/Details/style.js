@@ -40,6 +40,7 @@ export const DetailsContent = styled.div`
     max-width: 140rem;
     opacity: 1;
     transition: opacity 0.3s ease;
+    cursor: pointer;
   }
 
   .bike-switch {
@@ -90,3 +91,4 @@ export const SwitchOtherBikes = styled.div`
   }
 
 `
+

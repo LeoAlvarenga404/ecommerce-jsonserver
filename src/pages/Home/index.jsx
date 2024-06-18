@@ -31,8 +31,8 @@ export function Home() {
                 colors={bike.colors}
               />
             </Link>
-        ))}
-</BikeCards>
+            ))}
+        </BikeCards>
       </ContainerBikeShop>
     </div>
   );
