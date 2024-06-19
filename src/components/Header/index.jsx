@@ -1,25 +1,34 @@
-import { Logo } from "../../assets/Logo";
-import { ContainerIcons, HeaderContainer, HeaderNav } from "./style";
-import { ShoppingCart, User } from 'phosphor-react'
+import { useEffect, useState } from 'react';
+import { Logo } from '../../assets/Logo';
+import { ContainerIcons, HeaderContainer } from './style';
+import { ShoppingCart, User } from 'phosphor-react';
 
-// eslint-disable-next-line react/prop-types
-export function Header({isWhite}) {
- 
+export function Header({ isWhite }) {
+  const [isVisible, setIsVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const isVisible = prevScrollPos > currentScrollPos || currentScrollPos < 10;
+      setIsVisible(isVisible);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos, isVisible]); 
+
   return (
-    <HeaderContainer isWhite={isWhite}>
-      <Logo isWhite={isWhite}/>
-      {/* <HeaderNav isWhite={isWhite}>
-        <ul>
-          <li><a href="#">Bikes</a></li>
-          <li><a href="">Apparel</a></li>
-          <li><a href="">Acessories</a></li>
-          <li><a href="">Support</a></li>
-        </ul>
-      </HeaderNav> */}
+    <HeaderContainer isWhite={isWhite} isVisible={isVisible}>
+      <Logo isWhite={isWhite} />
       <ContainerIcons isWhite={isWhite}>
-        <User size={32}/>
-        <ShoppingCart size={32}/>
+        <User size={32} />
+        <ShoppingCart size={32} />
       </ContainerIcons>
     </HeaderContainer>
-  )
+  );
 }

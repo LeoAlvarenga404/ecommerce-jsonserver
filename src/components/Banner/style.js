@@ -18,21 +18,6 @@ export const BannerContainer = styled.div`
     background-color: ${({theme}) => theme.COLORS.WHITE};
     height: 10rem;
   }
-
-  // h1 {
-//   font-size: 8rem;
-//   line-height: 6.5rem;
-//   color: ${({theme}) => theme.COLORS.GRAY_800};
-// }
-
-// span {
-//   text-shadow: 
-//     -1px -1px 0 #000,  
-//      1px -1px 0 #000,
-//     -1px  1px 0 #000,
-//      1px  1px 0 #000;
-//   color: white;
-// }
 `
 
 

@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 export const DetailsContainer = styled.div`
- 
   background-color: ${({theme}) => theme.COLORS.GRAY};
   text-align: center;
-
+  padding-top: 7rem;
   span {
     font-size: 1rem;
     color: ${({theme}) => theme.COLORS.GRAY_800};
@@ -12,7 +11,7 @@ export const DetailsContainer = styled.div`
 
   h1 {
   font-size: 5rem;
-  
+  line-height: 4rem;
   font-weight: 500;
   color: ${({theme}) => theme.COLORS.GRAY_800};
   }

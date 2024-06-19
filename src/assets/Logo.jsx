@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 import { Link } from "react-router-dom";
 
-const ReturnToHome = styled(Link)``
+const ReturnToHome = styled(Link)`
+  width: 0;
+  height: 3rem;
+`
 
 // eslint-disable-next-line react/prop-types
 export function Logo({ isWhite}) {

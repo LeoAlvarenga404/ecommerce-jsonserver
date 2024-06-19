@@ -3,9 +3,10 @@ import axios from 'axios';
 import { BikeCard } from "../../components/BikeCard";
 import { Header } from "../../components/Header";
 import { BikeCards, ContainerBikeShop } from "./styles";
-
 import { Link } from 'react-router-dom';
 import { Banner } from '../../components/Banner';
+import { TitleBanner } from '../../components/TitleBanner';
+import { RoadsContainer } from '../../components/RoadsContainer';
 
 export function Home() {
   const [bikes, setBikes] = useState([]);
@@ -18,7 +19,11 @@ export function Home() {
   return (
     <div>
       <Header />
-      <Banner />
+      <Banner/>
+      <TitleBanner />
+      <RoadsContainer Competition/>
+      <RoadsContainer Endurance/>
+      <RoadsContainer Supercharged/>
       <ContainerBikeShop>
         <h1>ROAD BIKES</h1>
         <BikeCards>

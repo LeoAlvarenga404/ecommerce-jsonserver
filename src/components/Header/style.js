@@ -5,13 +5,14 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
   z-index: 99;
-  position: ${props => props.isWhite ? "relative" : "absolute"};
-  top: 0;
+  position: fixed;
+  top: ${props => props.isVisible ? '0' : '-7rem'};
   width: 100%;
-  height: 10rem;
-  padding-inline: 2rem;
-
-`
+  height: 7rem;
+  padding-inline: 4rem;
+  transition: all 0.2s ease;
+  background-color: ${ props => props.isWhite ? props.theme.COLORS.WHITE : props.theme.COLORS.BG_OPACITY };
+`;
 
 export const HeaderNav = styled.nav`
   ul {
