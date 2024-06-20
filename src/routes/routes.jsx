@@ -4,10 +4,11 @@ import { Details } from '../pages/Details';
 import { Competition } from '../pages/Competition'
 import { Endurance } from '../pages/Endurance'
 import { Supercharged } from '../pages/Supercharged'
-
+import { ScrollHandler } from '../components/ScrollHandler'
 export function App(){
   return (
     <Router>
+     <ScrollHandler />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/details/:id" element={<Details />} />

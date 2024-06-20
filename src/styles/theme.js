@@ -4,6 +4,7 @@ export default {
     WHITE: "#FFFFFF",
 
     GRAY: "#F5F5F5",
+    GRAY_600: "#686868",
     GRAY_800: "#202020",
 
     BG_OPACITY: "#00000090",

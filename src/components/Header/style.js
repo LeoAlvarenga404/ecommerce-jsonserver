@@ -11,7 +11,7 @@ export const HeaderContainer = styled.header`
   height: 7rem;
   padding-inline: 4rem;
   transition: all 0.2s ease;
-  background-color: ${ props => props.isWhite ? props.theme.COLORS.WHITE : props.theme.COLORS.BG_OPACITY };
+  background-color: ${ props => props.isWhite ? props.theme.COLORS.WHITE : 'transparent'};
 `;
 
 export const HeaderNav = styled.nav`
